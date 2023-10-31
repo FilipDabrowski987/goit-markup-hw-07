@@ -17,109 +17,199 @@
 /*mobile*/
 
 @media (max-width: 480px) {
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        }
-    .header
-    .container {
-            width: auto;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    background-color: var(--white-background);
     }
-    .section-motto {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        background-color: var(--dark);
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-        max-width: 479px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-bottom: 96px;
+    
+.list {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.header
+.container {
+    width: auto;
+}
+
+.section-motto {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--dark);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    max-width: 479px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 96px;
     }
 
-    .title {
-        max-width: 320px;
-        font-family: Roboto;
-        font-weight: 700;
-        line-height: 1.11;
-        font-size: 36px;
-        letter-spacing: 0.02em;
-        color: white;
-        margin-top: 112px;
-        margin-bottom: 72px;
-        
-    }
+.title {
+    max-width: 320px;
+    font-weight: 700;
+    line-height: 1.11;
+    font-size: 36px;
+    letter-spacing: 0.02em;
+    color: white;
+    margin-top: 112px;
+    margin-bottom: 72px;
+}
 
-    .orderservice {
-        color: white;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        background-color: var(--primary-brand);
-        padding: 16px 32px;
-        min-width: 169px;
-        height: 56px;
-        border: none;
-        border-radius: 4px;
-        display: block;
-        margin-bottom: 112px;
-        margin-left: auto;
-        margin-right: auto;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
+.orderservice {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: var(--primary-brand);
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 112px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    .characteristic {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        font-family: Roboto;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        margin-bottom: 8px;
-        margin-top: 72px;
-    }
-    .visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-    }
+.characteristic {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    margin-top: 72px;
+ }
 
-    .ulcharacteristic {
-        list-style: none;
-    }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
-    .svg-characteristic-icons {
-        display: none;
-    }
+.ulcharacteristic {
+    list-style: none;
+}
 
-    .char{
-        font-family: Roboto;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        max-width: 396px;
-        margin: auto;
-    }
+.svg-characteristic-icons {
+    display: none;
+}
 
-    .section-tasks {
-        display: none;
-    }
+.char{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    max-width: 396px;
+    margin: auto;
+}
+
+.section-tasks {
+    display: none;
+}
+.teamhead {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--dark);
+    padding-top: 96px;
+    padding-bottom: 72px;
+}
+
+.people {
+    background-color: var(--light);
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--dark);
+    margin-top: 96px;
+}
+
+.teamlist {
+    background-color: var(--white-background);
+}
+
+.members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 264;
+}
+
+.member {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.memberposition {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.ulsocial-link-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+    
+.lisocial-link-icons {
+    list-style: none;
+}
+
+.social-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-brand);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lisocial-link-icons {
+    width: 40px;
+    height: 40px;
 }
 
 /*desktop*/
