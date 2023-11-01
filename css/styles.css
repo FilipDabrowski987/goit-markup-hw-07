@@ -43,8 +43,7 @@ body {
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     height: 70px;
     padding-top: 25.5px;
-    display:flex;
-    justify-content: space-between;
+    
 }
 
 .logo {
@@ -54,12 +53,23 @@ body {
     line-height: 1.17;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    color: var(--primary-brand);
-    margin-left: 16px;    
+    color: var(--primary-brand);   
 }
 
 .inheader {
     color: var(--dark);
+}
+
+.headcont {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.svg-mobile-menu {
+    fill: var(--dark)
 }
 
 .ulnav {
@@ -1431,5 +1441,9 @@ img {
 .send-form-button:hover,
 .send-form-button:focus {
     background-color: var(--pressed-state);
+}
+
+.svg-mobile-menu {
+    display: none;
 }
 }
