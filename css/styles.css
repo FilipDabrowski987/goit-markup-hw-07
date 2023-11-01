@@ -35,7 +35,40 @@ body {
     padding-left: 0;
 }
 
-.header
+.header {
+    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    height: 70px;
+    padding-top: 25.5px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    line-height: 1.17;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--primary-brand);
+    margin-left: 16px;    
+}
+
+.inheader {
+    color: var(--dark);
+}
+
+.ulnav {
+    display: none;
+}
+
+.contacts {
+    display: none;
+}
 .container {
     width: auto;
 }
@@ -80,7 +113,8 @@ body {
     margin-bottom: 112px;
     margin-left: auto;
     margin-right: auto;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
 .characteristic {
@@ -157,6 +191,10 @@ body {
 
 .teamlist {
     background-color: var(--white-background);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .members {
@@ -208,7 +246,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .lisocial-link-icons {
@@ -243,7 +280,6 @@ body {
     wrap: 72px;
     gap: 16px;
     padding-top: 72px;
-    
 }
 
 .customers-links {
@@ -257,7 +293,6 @@ body {
     border-style: solid;
     border-color: var(--subtle-text);
     color: var(--subtle-text);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svglogo-customers {
@@ -290,18 +325,23 @@ footer {
 
 .link {
     text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .parinfoo {
-    display: flex;
-    justify-content: center;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--light);
     width: 268px;
+    
+}
+
+.foo-container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .social-media-infoo {
@@ -332,7 +372,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .lisocial-link-icons-infoo {
@@ -368,11 +407,39 @@ footer {
     color: var(--white-background);
     padding-left: 16px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    
 }
 
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.subscribe-form-button {
+    min-width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+    background-color: var(--primary-brand);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white-background);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
 
+.svgsubscribe-button {
+    fill: var(--white-background);
+    margin-left: 16px;
+}
 }
 
 /*desktop*/
