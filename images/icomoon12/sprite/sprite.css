@@ -1,0 +1,86 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.icons-hamburger {
+  width: 47px;
+  height: 32px;
+  background-position: 0 0;
+}
+.icons-close-black {
+  width: 32px;
+  height: 32px;
+  background-position: -96px 0;
+}
+.icons-antenna-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -144px 0;
+}
+.icons-astronaut-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -192px 0;
+}
+.icons-clock-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -240px 0;
+}
+.icons-diagram-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px 0;
+}
+.icons-facebook-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -336px 0;
+}
+.icons-instagram-2 {
+  width: 32px;
+  height: 32px;
+  background-position: -384px 0;
+}
+.icons-linkedin-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -432px 0;
+}
+.icons-Logo-1 {
+  width: 59px;
+  height: 32px;
+  background-position: -480px 0;
+}
+.icons-Logo-2 {
+  width: 59px;
+  height: 32px;
+  background-position: -576px 0;
+}
+.icons-Logo-3 {
+  width: 59px;
+  height: 32px;
+  background-position: -672px 0;
+}
+.icons-Logo-4 {
+  width: 59px;
+  height: 32px;
+  background-position: 0 -48px;
+}
+.icons-Logo-5 {
+  width: 59px;
+  height: 32px;
+  background-position: -96px -48px;
+}
+.icons-Logo-6 {
+  width: 59px;
+  height: 32px;
+  background-position: -192px -48px;
+}
+.icons-twitter-1 {
+  width: 32px;
+  height: 32px;
+  background-position: -288px -48px;
+}
+
