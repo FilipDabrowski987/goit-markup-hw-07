@@ -637,6 +637,7 @@ body {
     column-gap: 24px;
     row-gap: 72px;
     margin-top: 96px;
+    flex-basis: calc((100% - 24px) / 2);
     margin-left: 21px;
     margin-right: 21px;
 }
@@ -686,7 +687,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark);
-    flex-basis: calc((100% - 72px) / 4);
+    
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -699,6 +700,7 @@ body {
     justify-content: center;
     column-gap: 24px;
     row-gap: 64px;
+    flex-basis: calc((100% - 24px) / 2);
 }
 
 .social-link-icons {
