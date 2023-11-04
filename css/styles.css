@@ -103,8 +103,7 @@ body {
     font-size: 36px;
     letter-spacing: 0.02em;
     color: white;
-    margin-top: 112px;
-    margin-bottom: 72px;
+    margin: 112px 54px 72px 54px;
 }
 
 .orderservice {
@@ -169,7 +168,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 396px;
-    margin: auto;
+    margin: 0 16px 0 16px;
 }
 
 .section-tasks {
@@ -403,7 +402,7 @@ footer {
 }
 
 .subscribe-email-input {
-    width: 398px;
+    
     height: 40px;
     border: 1px solid var(--white-background);
     background-color: transparent;
@@ -416,6 +415,7 @@ footer {
     color: var(--white-background);
     padding-left: 16px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin: 0 15px 0 15px;
 }
 
 .subscribe-form {
@@ -488,6 +488,13 @@ body {
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+.headcontainer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 16px;
+    align-items: center;
+}
 
 .headcont {
     display: flex;
@@ -502,9 +509,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: var(--primary-brand);
-    margin-right: 120px;
     display: inline-block;
-    margin-left: 16px;
 }
 
 .inheader {
@@ -550,6 +555,7 @@ body {
     align-items: right;
     text-align: center;
     wrap: 12px;
+    list-style: none;
 }
 
 .conts {
@@ -636,9 +642,8 @@ body {
     column-gap: 24px;
     row-gap: 72px;
     margin-top: 96px;
-    flex-basis: calc((100% - 24px) / 2);
-    margin-left: 21px;
-    margin-right: 21px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .characteristic {
@@ -699,7 +704,8 @@ body {
     justify-content: center;
     column-gap: 24px;
     row-gap: 64px;
-    flex-basis: calc((100% - 24px) / 2);
+    margin-left: 108px;
+    margin-right: 108px;
 }
 
 .member {
@@ -792,6 +798,8 @@ body {
     flex-basis: calc((100% - 48px) / 3);
     list-style: none;
     margin-bottom: 96px;
+    margin-left: 108px;
+    margin-right: 108px;
 }
 
 footer {
@@ -801,20 +809,13 @@ footer {
     padding: 100px 0;
 }
 
-
-.foo-container-logo {
-   display: inline-block;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   margin-left: 108px;
-}
-
-.foo-social-links {
-    display: inline-block;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
+.foo-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 108px;
+    margin-right: 108px;
+    gap: 24px;
+    align-items: baseline;
 }
 
 .footer {
@@ -822,15 +823,13 @@ footer {
 }
 
 .logoinfoo {
-    margin-bottom: 16px;
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     line-height: 1.17;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    color: var(--primary-brand);
-    
+    color: var(--primary-brand);  
 }
 
 .parinfoo {
@@ -866,6 +865,12 @@ footer {
     justify-content: center;
 }
 
+.subscribe-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
 .subcsribe-form-par {
     font-family: Roboto;
     font-size: 16px;
@@ -874,10 +879,7 @@ footer {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--white-background);
-    margin-top: 72px;
-    display: flex;
-    justify-content: left;
-    margin-left: 108px;
+    margin-top: 48px;
 }
 
 .subscribe-email-input {
@@ -910,10 +912,9 @@ footer {
     border-radius: 4px;
     border: none;
     cursor: pointer;
+    margin-top: 16px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 16px;
 }
 
 .svgsubscribe-button {
@@ -924,19 +925,13 @@ footer {
 .ulsocial-links-infoo {
     list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
+   
     gap: 16px;
     margin-top: 16px;
 }
 
 .subscribe-form {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: flex-end;
    gap: 24px;
-   margin-left: 108px;
-   margin-right: 108px;
 }
 
 .list {
