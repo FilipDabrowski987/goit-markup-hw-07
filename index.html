@@ -20,7 +20,7 @@
         <nav class="headcont">
             <a class="link logo" href="./index.html">Web<span class="inheader">Studio</span></a>
 <!--hamburger do mobile menu-->
-            <button class="menu-toggle js-open-menu">
+            <button class="menu-toggle open js-open-menu">
             <svg class="svg-mobile-menu" width="32" height="22" xmlns="http://www.w3.org/2000/svg">
                 <use href="./images/icons.svg#icons-hamburger">
                 </use>
@@ -412,7 +412,66 @@
             </div>
         </div>
     </footer>
+
     <!--menu mobilne-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle close js-close-menu">
+        <svg class="closebutton-mobile-menu" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="8" height="8">
+            <path d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"></path>
+        </svg>
+    </button>
+    <ul class="ulmobile-menu">
+        <li class="limobile-menu studio"><a href="" class="link">Studio</a></li>
+        <li class="limobile-menu"><a href="" class="link">Porfolio</a></li>
+        <li class="limobile-menu"><a href="" class="link">Contacts</a></li>
+    </ul>
+    <address class="contacts-mobile-menu">
+        <ul class="ulcontact">
+            <li class="licontact-mobile-menu-tel">
+                <a class="link conts" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="licontact-mobile-menu-email">
+                <a class="link conts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+    </address>
+    <div class="social-links-mobile-menu">
+        <ul class="ulsocial-links-mobile-menu">
+            <li class="lisocial-link-icons-mobile-menu">
+                <a class="social-link-mobile-menu" href="#">
+                    <svg class="svgsocial-link-icons-mobile-menu" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <use href="./images/icons.svg#icons-instagram-2">
+                        </use>
+                    </svg>
+                </a>
+            </li>
+            <li class="lisocial-link-icons-mobile-menu">
+                <a class="social-link-mobile-menu" href="#">
+                    <svg class="svgsocial-link-icons-mobile-menu" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <use href="./images/icons.svg#icons-twitter-1">
+                        </use>
+                    </svg>
+                </a>
+            </li>
+            <li class="lisocial-link-icons-mobile-menu">
+                <a class="social-link-mobile-menu" href="#">
+                    <svg class="svgsocial-link-icons-mobile-menu" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <use href="./images/icons.svg#icons-facebook-1">
+                        </use>
+                    </svg>
+                </a>
+            </li>
+            <li class="lisocial-link-icons-mobile-menu">
+                <a class="social-link-mobile-menu" href="#">
+                    <svg class="svgsocial-link-icons-mobile-menu" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <use href="./images/icons.svg#icons-linkedin-1">
+                        </use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    </div>
 
     <!--okno modalne--> 
     <div class="modal-body is-hidden" data-modal>
@@ -484,5 +543,8 @@
     </div>
     </div>
     <script src="./js/modal.js"></script>
+
+   
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
