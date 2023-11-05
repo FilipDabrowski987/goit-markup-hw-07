@@ -42,7 +42,7 @@ body {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     height: 70px;
-    padding-top: 25.5px;
+    padding-top: 24px;
     
 }
 
@@ -63,7 +63,7 @@ body {
 .headcont {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     margin-left: 16px;
     margin-right: 16px;
 }
@@ -288,6 +288,8 @@ body {
     wrap: 72px;
     gap: 16px;
     padding-top: 72px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .customers-links {
@@ -403,7 +405,7 @@ footer {
 }
 
 .subscribe-email-input {
-    
+    min-width: 320px;
     height: 40px;
     border: 1px solid var(--white-background);
     background-color: transparent;
@@ -415,8 +417,11 @@ footer {
     letter-spacing: 0.04em;
     color: var(--white-background);
     padding-left: 16px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    margin: 0 15px 0 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); 
+}
+
+.subscribe-email-label {
+    
 }
 
 .subscribe-form {
@@ -465,9 +470,14 @@ footer {
 }
 
 .menu-toggle.close {
-    cursor: pointer;
-    display: flex;
-    justify-content: right;
+    cursor: pointer; 
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    opacity: 0,1;
 }
 
 .menu-container.is-open {
@@ -503,7 +513,7 @@ footer {
     fill: var(--light);
 }
 
-.ulmobile-menu, .licontact-mobile-menu-tel {
+.ulmobile-menu {
     font-family: Roboto;
     font-size: 36px;
     font-style: normal;
@@ -514,7 +524,21 @@ footer {
     margin-top: 80px;
     margin-left: 40px;
     list-style: none;
-    color:#2E2f42;
+    color: var(--dark);
+}
+
+.licontact-mobile-menu-tel {
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    margin-top: 80px;
+    margin-left: 40px;
+    list-style: none;
+    color: #2E2f42;
 }
 
 .licontact-mobile-menu-email {
@@ -612,6 +636,119 @@ footer {
     position: relative;
 }
 
+.modal-window-form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    padding-left: 38px;
+    background-color: transparent;
+    outline: transparent;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-window-form-input-container-comment {
+    margin-bottom: 16px;
+}
+
+.svg-modal-window-form-input {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.modal-window-form-input-comment {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    padding: 8px 16px;
+    background-color: transparent;
+    outline: transparent;
+    resize: none;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-window-form-input-container-checkbox {
+    margin-bottom: 24px;
+}
+
+.modal-window-form-checkbox-label {
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--subtle-text);
+}
+
+.modal-window-form-input-checkbox-label {
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    display: block;
+    color: var(--subtle-text);
+}
+
+.modal-window-form-input-checkbox:checked+.modal-window-form-input-checkbox-label>.custom-checkbox {
+    background-color: var(--pressed-state);
+    border: none;
+    fill: var(--light);
+}
+
+.custom-checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    margin-right: 8px;
+}
+
+.link-privacy-policy {
+    color: var(--primary-brand);
+}
+
+.send-form-button {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white-background);
+    background-color: var(--primary-brand);
+    min-width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin: auto;
+}
+
 .js-menu-container {
     background-color: var(--white-background);
     z-index: 999;
@@ -630,18 +767,12 @@ footer {
 }
 
 .closebutton-mobile-menu {
-    position: absolute;
-    top: 24px;
-    right: 24px;
     width: 24px;
     height: 24px;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: none;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0;
+    padding: 8px;
     cursor: pointer;
     stroke-width: 1px;
     stroke-opacity: 0,1;
@@ -686,7 +817,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: 16px;
-    margin-right: 16px;
+    margin-right: 24px;
     align-items: center;
 }
 
