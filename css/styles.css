@@ -94,7 +94,16 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 96px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 96dpi),
+(min-resolution: 2dppx) {
+    .section-motto {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office@2x.jpg);
     }
+} 
 
 .title {
     max-width: 320px;
@@ -285,8 +294,8 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    wrap: 72px;
-    gap: 16px;
+    row-gap: 72px;
+    column-gap: 16px;
     padding-top: 72px;
     margin-left: 16px;
     margin-right: 16px;
@@ -418,10 +427,6 @@ footer {
     color: var(--white-background);
     padding-left: 16px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); 
-}
-
-.subscribe-email-label {
-    
 }
 
 .subscribe-form {
@@ -840,8 +845,6 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: var(--primary-brand);
-   
-    margin-right: ;
 }
 
 .inheader {
@@ -912,6 +915,15 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 96dpi),
+(min-resolution: 2dppx) {
+    .section-motto {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office@2x.jpg);
+    }
 }
 
 .title {
@@ -1132,8 +1144,8 @@ body {
     flex-basis: calc((100% - 48px) / 3);
     list-style: none;
     margin-bottom: 96px;
-    margin-left: 108px;
-    margin-right: 108px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 footer {
@@ -1549,10 +1561,10 @@ color: var(--dark);
 
 @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
+    (min-resolution: 96dpi),
     (min-resolution: 2dppx) {
     .section-motto {
-        background-image: url(../images/people-office@2x.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office@2x.jpg);
     }
 }
 
