@@ -16,7 +16,7 @@
 
 /*mobile*/
 
-@media (min-width: 428px) and (max-width: 768px) {
+@media (max-width: 767px) {
 * {
     box-sizing: border-box;
     margin: 0;
@@ -175,8 +175,9 @@ body {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    max-width: 396px;
+    width: 396px;
     margin: 0 auto;
+
 }
 
 .section-tasks {
@@ -323,6 +324,7 @@ footer {
     background-color: var(--dark);
     letter-spacing: 0.03em;
     padding: 97.5px 0;
+    min-width: 428px;
 }
 
 .logoinfoo {
@@ -930,6 +932,7 @@ body {
 .title {
     display: flex;
     text-align: center;
+    justify-content: center;
     font-family: Roboto;
     font-size: 56px;
     letter-spacing: 0.02em;
@@ -989,8 +992,10 @@ body {
     column-gap: 24px;
     row-gap: 72px;
     margin-top: 96px;
-    margin-left: 16px;
-    margin-right: 16px;
+    max-width: 736px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .characteristic {
@@ -2197,7 +2202,7 @@ img {
 
 .modal-window {
     position: absolute;
-    top: 12%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     width: 408px;
