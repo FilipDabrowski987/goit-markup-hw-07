@@ -16,7 +16,7 @@
 
 /*mobile*/
 
-@media (max-width: 428px) {
+@media (min-width: 428px) and (max-width: 768px) {
 * {
     box-sizing: border-box;
     margin: 0;
@@ -89,7 +89,6 @@ body {
     justify-content: center;
     background-color: var(--dark);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-    max-width: 479px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -177,7 +176,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 396px;
-    margin: 0 16px 0 16px;
+    margin: 0 auto;
 }
 
 .section-tasks {
@@ -297,9 +296,10 @@ body {
     row-gap: 72px;
     column-gap: 16px;
     padding-top: 72px;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin: 0 auto;
+    max-width: 396px;
 }
+
 
 .customers-links {
     width: 190px;
@@ -345,6 +345,10 @@ footer {
 .link {
     text-decoration: none;
 }
+.foo-container {
+    display: block;
+    margin: 0 auto 0 auto;
+}
 
 .parinfoo {
     font-size: 16px;
@@ -353,7 +357,6 @@ footer {
     letter-spacing: 0.02em;
     color: var(--light);
     width: 268px;
-    
 }
 
 .foo-container-logo {
@@ -414,7 +417,7 @@ footer {
 }
 
 .subscribe-email-input {
-    min-width: 320px;
+    min-width: 398px;
     height: 40px;
     border: 1px solid var(--white-background);
     background-color: transparent;
@@ -576,7 +579,7 @@ footer {
 
 .modal-window {
     position: absolute;
-    top: 11%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     width: 392px;
@@ -793,7 +796,7 @@ img {
 
 }
 /*tablet*/
-@media (min-width: 429px) and (max-width:1157px) {
+@media (min-width: 768px) and (max-width: 1157px) {
 * {
     box-sizing: border-box;
     margin: 0;
@@ -825,9 +828,7 @@ body {
 }
 .headcontainer {
     display: flex;
-    justify-content: space-between;
-    margin-left: 16px;
-    margin-right: 16px;
+    justify-content: center;
     align-items: center;
 }
 
@@ -855,7 +856,8 @@ body {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-left: 20px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
 
@@ -888,11 +890,11 @@ body {
 }
 
 .contacts {
-    display: inline-block;  
+    display: block;
 }
 
 .ulcontact {
-    list-style: none;
+    list-style: none;   
 }
 
 .conts {
@@ -901,8 +903,7 @@ body {
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.02em;
-    display: flex;
-    align-items: center;
+    
 }
 
 .section-motto {
@@ -911,7 +912,7 @@ body {
     margin: 0 auto;
     background-color: var(--dark);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-    max-width: 1199px;
+    max-width: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1037,7 +1038,6 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark);
-    
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -1050,8 +1050,8 @@ body {
     justify-content: center;
     column-gap: 24px;
     row-gap: 64px;
-    margin-left: 108px;
-    margin-right: 108px;
+    max-width: 552px;
+    margin: 0 auto;
 }
 
 .member {
@@ -1144,8 +1144,9 @@ body {
     flex-basis: calc((100% - 48px) / 3);
     list-style: none;
     margin-bottom: 96px;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 552px;
 }
 
 footer {
@@ -1158,10 +1159,11 @@ footer {
 .foo-container {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 108px;
-    margin-right: 108px;
+    justify-content: center;
     gap: 24px;
     align-items: baseline;
+    max-width: 496px;
+    margin: 0 auto;
 }
 
 .footer {
@@ -1213,7 +1215,6 @@ footer {
 
 .subscribe-form {
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-end;
 }
 
@@ -1259,6 +1260,7 @@ footer {
     border: none;
     cursor: pointer;
     margin-top: 16px;
+    margin-right: 43px;
     display: flex;
     align-items: center;
 }
@@ -1309,7 +1311,7 @@ footer {
 
 .modal-window {
     position: absolute;
-    top: 11%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     width: 392px;
@@ -1553,7 +1555,7 @@ color: var(--dark);
     padding-bottom: 188px;
     background-color: var(--dark);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-    max-width: 1440px;
+    max-width: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1815,7 +1817,6 @@ footer {
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: var(--primary-brand);
-    margin-right: 76px;
     display: inline-block;
 }
 
@@ -1949,6 +1950,8 @@ img {
 .ulnav {
     display: flex;
     gap: 40px;
+    margin-left: 76px;
+    margin-right: 332px;
 }
 
 
@@ -1995,7 +1998,7 @@ img {
 
 .headcontainer {
     display: flex;
-    gap: 332px;
+    justify-content: center;
 }
 
 .appcontainer {
