@@ -175,9 +175,7 @@ body {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    width: 396px;
     margin: 0 auto;
-
 }
 
 .section-tasks {
@@ -324,7 +322,6 @@ footer {
     background-color: var(--dark);
     letter-spacing: 0.03em;
     padding: 97.5px 0;
-    min-width: 428px;
 }
 
 .logoinfoo {
@@ -419,7 +416,7 @@ footer {
 }
 
 .subscribe-email-input {
-    min-width: 398px;
+    width: auto;
     height: 40px;
     border: 1px solid var(--white-background);
     background-color: transparent;
@@ -439,6 +436,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-width: 320px;
 }
 
 .subscribe-form-button {
@@ -499,6 +497,14 @@ footer {
     height: 40px;
 }
 
+.mobile-menu {
+    color: var(--dark);
+}
+
+.mobile-menu-transition {
+    color: var(--pressed-state);
+}
+
 .social-link-mobile-menu {
     width: 100%;
     height: 100%;
@@ -534,7 +540,6 @@ footer {
     margin-top: 80px;
     margin-left: 40px;
     list-style: none;
-    color: var(--dark);
 }
 
 .licontact-mobile-menu-tel {
@@ -548,7 +553,6 @@ footer {
     margin-top: 80px;
     margin-left: 40px;
     list-style: none;
-    color: #2E2f42;
 }
 
 .licontact-mobile-menu-email {
@@ -558,7 +562,6 @@ footer {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--text);
     margin-top: 40px;
     margin-left: 40px;
     list-style: none;
@@ -566,6 +569,13 @@ footer {
 
 .limobile-menu {
     margin-top: 40px;
+}
+
+.mobile-menu-tel {
+    color: var(--primary-brand);
+}
+
+.mobile-menu-email {
     color: var(--dark);
 }
 
