@@ -105,13 +105,13 @@ body {
 } 
 
 .title {
-    max-width: 320px;
+    width: 320px;
     font-weight: 700;
     line-height: 1.11;
     font-size: 36px;
     letter-spacing: 0.02em;
     color: white;
-    margin: 112px 54px 72px 54px;
+    margin: 112px auto 72px auto;
 }
 
 .orderservice {
@@ -177,6 +177,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     min-width: 288px;
+    display: flex;
+    justify-content: center;
 }
 
 .section-tasks {
