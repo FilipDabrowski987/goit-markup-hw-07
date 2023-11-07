@@ -163,6 +163,7 @@ body {
 
 .ulcharacteristic {
     list-style: none;
+    margin: 0 16px 0 16px;
 }
 
 .svg-characteristic-icons {
@@ -175,7 +176,7 @@ body {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin: 0 auto;
+    min-width: 288px;
 }
 
 .section-tasks {
@@ -416,7 +417,9 @@ footer {
 }
 
 .subscribe-email-input {
-    width: auto;
+    display: flex;
+    flex-grow: 1;
+    width: 288px;
     height: 40px;
     border: 1px solid var(--white-background);
     background-color: transparent;
@@ -436,7 +439,6 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-width: 320px;
 }
 
 .subscribe-form-button {
